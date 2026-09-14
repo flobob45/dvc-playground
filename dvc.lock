@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  transform-uppercase:
+    cmd: python upper.py data.csv data-upper.csv
+    deps:
+    - path: data.csv
+      hash: md5
+      md5: a546111eeba6497aafc1b3263cf45d6c
+      size: 81193310
+    outs:
+    - path: data-upper.csv
+      hash: md5
+      md5: 2a6ce2d726d43441b0b12c6e3d35c7a1
+      size: 81059022

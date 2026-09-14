@@ -1,0 +1,7 @@
+stages:
+  transform-uppercase:
+    cmd: python upper.py data.csv data-upper.csv
+    deps:
+    - data.csv
+    outs:
+    - data-upper.csv
